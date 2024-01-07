@@ -6,8 +6,8 @@ app = Flask(__name__)
 app.instance_path = Path(".").resolve()
 
 @app.route("/")
-def home():
-    return render_template("home.html")
+def profile():
+    return render_template("profile.html")
 
 @app.route("/projects")
 def projects():
