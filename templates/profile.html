@@ -1,6 +1,52 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Home</h1>
-<p class="lead">Welcome to my website!</p>
+<div class="container-fluid">
+  <div class="row ">
+    <div class="col-md-3 d-none d-md-block"></div>
+    <!--Content Column-->
+    <div class="col-md-6 container">
+      <!--Profile Row-->
+      <div class="row mt-5">
+        <div class="col">
+          <h1>Ian Macdonald</h1>
+          <h2>Co-op Student</h2>
+          <h2>Richmond, BC</h2>
+        </div>
+        <div class="col">
+          <img src="{{ url_for('static', filename='images/Ian.jpg') }}" alt="Profile Picture" width="200" height="200" style="float:right">
+        </div>
+      </div>
+      <!--About me Row-->
+      <div class="row mt-5">
+        <div class="row">
+          <div class="col">
+            <h2>About Me</h2>
+          </div>
+          <div class="col">
+            <a href="https://github.com/IanMacdonald37" class="btn" role="button" target="_blank">
+              <img src="{{ url_for('static', filename='images/githublogo.png') }}" alt="Github Logo" width="40" height="40" style="float:right">
+            </a>
+            <a href="https://www.linkedin.com/in/ian-macdonald-88b095221/" class="btn" role="button" target="_blank">
+              <img src="{{ url_for('static', filename='images/linkedinlogo.png') }}" alt="Linkedin Logo" width="40" height="40" style="float:right">
+            </a>
+          </div>
+        </div>
+        
+        <p>
+          Hi There! I am currently in my second year pursuing a Computer Information Technology diploma at the British Columbia Institute of Technology and eagerly seeking co-op positions. 
+          My academic journey has equipped me with a strong foundation in web development, database management, and various IT roles. 
+          Passionate about harnessing technology to solve real-world challenges, I am eager to apply my skills and knowledge in a professional setting. 
+          My experiences at BCIT have not only honed my technical expertise but also fostered a proactive and collaborative approach to problem-solving. 
+          I am excited about the prospect of contributing to innovative projects and gaining valuable hands-on experience in the dynamic field of technology. 
+        </p>
+      </div>
+
+    </div>
+    <!--End of content column-->
+    <div class="col-md-3 d-none d-md-block"></div>
+  </div>
+</div>
+
+
 {% endblock %}
