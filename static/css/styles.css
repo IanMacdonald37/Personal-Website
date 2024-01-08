@@ -1,0 +1,11 @@
+/*
+IDs in Resume.html
+*/
+
+#ResumeDate {
+  background-color: aqua;
+  color: black;
+  display: inline;
+  padding-left: 3px;
+  padding-right: 3px;
+}
